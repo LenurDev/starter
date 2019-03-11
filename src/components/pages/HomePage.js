@@ -19,7 +19,7 @@ const HomePage = () => (
         <img
           className="img-fluid"
           alt="Adventurers League Logo"
-          src="http://media.wizards.com/images/dnd/playevents/DnD_ADVL.png"
+          src="https://app.orkistra.com/images/loader.jpg"
         />
       </Col>
       <Col

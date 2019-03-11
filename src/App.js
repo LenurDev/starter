@@ -19,6 +19,8 @@ import NewCharacterPage from "./components/pages/NewCharacterPage";
 import { fetchCurrentUserRequest } from "./actions/users";
 import messages from "./messages";
 
+import AdminLayout from './modules/admin/layouts/Admin/Admin.jsx';
+
 class App extends React.Component {
   componentDidMount() {
     if (this.props.isAuthenticated) this.props.fetchCurrentUserRequest();
@@ -79,6 +81,13 @@ class App extends React.Component {
               path="/characters/new"
               exact
               component={NewCharacterPage}
+            />
+
+
+            <UserRoute
+              location={location}
+              path="/admin"
+              render={props => <AdminLayout {...props} />}
             />
           </Loader>
         </div>
